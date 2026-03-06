@@ -1,0 +1,28 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+authors = ["Ian Macalinao <me@ianm.com>"]
+edition = "2024"
+homepage = "https://github.com/macalinao/cargo-furnish"
+license = "Apache-2.0"
+repository = "https://github.com/macalinao/cargo-furnish"
+
+[workspace.dependencies]
+anyhow = "1.0.102"
+bpaf = { version = "0.9.23", features = ["autocomplete", "derive"] }
+glob = "0.3.3"
+miette = "7.6.0"
+thiserror = "2.0.18"
+toml_edit = "0.25.3"
+
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+complexity = { level = "deny", priority = -1 }
+must_use_candidate = "allow"
+unwrap_used = "deny"
+std_instead_of_alloc = "deny"
+std_instead_of_core = "deny"
+cognitive_complexity = "deny"
+too_many_lines = "deny"

@@ -1,0 +1,3 @@
+[[package]]
+name = "cargo-furnish"
+git_tag_name = "v{{ version }}"

@@ -1,0 +1,19 @@
+name: devenv test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  devenv-test:
+    name: devenv test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: cachix/install-nix-action@v31
+      - uses: cachix/cachix-action@v16
+        with:
+          name: devenv
+      - run: nix profile install nixpkgs#devenv
+      - run: devenv test

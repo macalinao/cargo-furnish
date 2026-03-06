@@ -1,0 +1,23 @@
+[package]
+name = "cargo-furnish"
+version = "0.0.10"
+authors.workspace = true
+categories = ["command-line-utilities", "development-tools"]
+edition.workspace = true
+homepage.workspace = true
+keywords = ["cargo", "metadata", "readme", "workspace"]
+license.workspace = true
+repository.workspace = true
+description = "Furnish Rust crates with standardized Cargo.toml metadata, READMEs, and doc attributes"
+
+[lints]
+workspace = true
+
+[dependencies]
+ansi-term-styles = "0.1.0"
+anyhow.workspace = true
+bpaf = { workspace = true, features = ["autocomplete", "bright-color", "docgen"] }
+glob.workspace = true
+miette = { workspace = true, features = ["fancy"] }
+thiserror.workspace = true
+toml_edit.workspace = true
