@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.11](https://github.com/macalinao/cargo-furnish/compare/v0.0.10...v0.0.11) - 2026-03-21
+
+### Other
+
+- Fix devenv CI and replace dprint with oxfmt
+- Initial commit: cargo-furnish CLI tool
+
 ## [0.0.10](https://github.com/lintel-rs/lintel/compare/cargo-furnish-v0.0.9...cargo-furnish-v0.0.10) - 2026-02-28
 
 ### Other
