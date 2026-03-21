@@ -14,26 +14,18 @@
   treefmt = {
     enable = true;
     config.programs = {
-      dprint = {
+      nixfmt.enable = true;
+      rustfmt.enable = true;
+      oxfmt = {
         enable = true;
         includes = [
-          "*.toml"
-          "*.md"
           "*.json"
+          "*.md"
+          "*.toml"
           "*.yaml"
           "*.yml"
         ];
-        settings.plugins = pkgs.dprint-plugins.getPluginList (
-          plugins: with plugins; [
-            dprint-plugin-toml
-            dprint-plugin-markdown
-            dprint-plugin-json
-            g-plane-pretty_yaml
-          ]
-        );
       };
-      nixfmt.enable = true;
-      rustfmt.enable = true;
     };
   };
 

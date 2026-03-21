@@ -25,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- add jsonschema-migrate crate, per-group _shared dirs, and update README badges
+- add jsonschema-migrate crate, per-group \_shared dirs, and update README badges
 
 ### Other
 
