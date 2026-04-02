@@ -15,7 +15,7 @@ bpaf = { version = "0.9.23", features = ["autocomplete", "derive"] }
 glob = "0.3.3"
 miette = "7.6.0"
 thiserror = "2.0.18"
-toml_edit = "0.25.3"
+toml_edit = "0.25.10"
 
 [workspace.lints.clippy]
 pedantic = { level = "warn", priority = -1 }
